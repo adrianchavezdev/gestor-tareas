@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #eef2f7; margin: 0; padding: 20px; }
+.contenedor { max-width: 600px; margin: 30px auto; background: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+h1 { text-align: center; color: #2c3e50; margin-top: 0; }
+.formulario { display: flex; gap: 8px; }
+.formulario input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+button { padding: 10px 14px; border: none; border-radius: 6px; cursor: pointer; color: #fff; font-size: .9rem; }
+#btnAgregar { background: #2980b9; }
+.btn-editar { background: #f39c12; }
+.btn-eliminar { background: #c0392b; }
+.error { color: #c0392b; min-height: 20px; margin: 8px 0; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px; border-bottom: 1px solid #eee; }
+li .texto { flex: 1; cursor: pointer; word-break: break-word; }
+li.completa .texto { text-decoration: line-through; color: #999; }
+.acciones { display: flex; gap: 6px; }
+@media (max-width: 480px) {
+  .formulario { flex-direction: column; }
+  li { flex-direction: column; align-items: flex-start; }
+  .acciones { width: 100%; }
+  .acciones button { flex: 1; }
+}
